@@ -4,7 +4,7 @@ endif
 
 let g:restore_cursor_loaded = 1
 
-function! RestoreCursor()
+function RestoreCursor()
   if &ft != 'gitcommit' && line("'\"") > 0 && line("'\"") <= line("$")
     exe "normal g`\""
   endif
